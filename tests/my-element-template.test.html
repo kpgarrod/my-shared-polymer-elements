@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>My Element Template</title>
+
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="../polymer-test-tools/tools.html">
+  <script src="../polymer-test-tools/htmltest.js"></script>
+  <link rel="import" href="../my-element-template/my-element-template.html">
+
+
+</head>
+<body>
+
+  <my-element-template></my-element-template>
+
+  <script>
+
+    document.addEventListener('polymer-ready', function() {
+      // Test a property
+      var myEl = document.querySelector('my-element-template');
+      assert.equal(myEl.author, 'Dimitri Glazkov');
+
+      // Test a method
+      var hello = myEl.sayHello();
+      assert.equal(hello, 'my-element-template says, Hello World!');
+      var greetings = myEl.sayHello('greetings Earthlings');
+      assert.equal(greetings, 'my-element-template says, greetings Earthlings');
+
+      done();
+      // Test an event
+      myEl.addEventListener('my-element-template-lasers-success', function(event) {
+        assert.equal(event.detail.sound, 'Pew pew pew!');
+        // IMPORTANT:
+        // Make sure to call done() at the end of every test suite!
+        done();
+      });
+      myEl.fireLasers();
+    });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "polymer-shared-elements",
+  "version": "0.0.3",
+  "homepage": "https://github.com/kpgarrod/designer",
+  "authors": [
+    "Keith Garrod <kpgarrod@gmail.com>"
+  ],
+  "description": "A template for a collection of Polymer elements that can be shared between private projects",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "platform": "~1.2.0",
+    "polymer": "~0.3.3",
+    "polymer-test-tools": "polymer/polymer-test-tools#~0.3.3"
+  },
+  "resolutions": {
+    "platform": "^0.3.3"
+  }
+}
