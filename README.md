@@ -19,9 +19,14 @@ There's nothing fancy here, just a directory structure and a few files. It's cru
 
 To get up and running with the tests, you should just need to clone the repo and run 'bower install'.
 
-To add an element of your own:
+### To add an element of your own:
 
-- duplicate the my-element-template directory and edit according to your needs. Note: metadata.html is what adds your element to the designer palette.
-- add a test to the tests directory 
-- duplicate the htmlsuite function in tests/tests.html
-- add a link to your new element's metadata.html in the root directory's metadata.html
+1. duplicate the my-element-template directory and edit according to your needs. Note: metadata.html is what adds your element to the designer palette.
+2. add a test to the tests directory 
+3. duplicate the htmlsuite function in tests/tests.html
+4. add a link to your new element's metadata.html in the root directory's metadata.html
+
+### To add your collection of elements to the Polymer Designer
+
+1. publish your branch to github
+2. follow the instructions on the Polymer/designer github page.
