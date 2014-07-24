@@ -1,7 +1,7 @@
 my-shared-polymer-elements
 ==========================
 
-The idea of this repo is to provide a simple template for a collection of Polymer elements that can be shared between multiple private projects.
+This repo provides a simple template for keeping a collection of Polymer elements in one github repository, so that they can be shared between multiple private projects.
 
 The existing toolware (e.g. yo polymer) can generate:
 
