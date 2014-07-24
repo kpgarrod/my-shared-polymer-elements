@@ -1,4 +1,3 @@
 .idea
-/platform
-/polymer-test-tools
-/polymer
+components
+components/platform/bower.json
