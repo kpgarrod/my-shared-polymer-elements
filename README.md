@@ -23,6 +23,7 @@ There's nothing fancy here, just a directory structure and a few files. It's cru
 2. run 'bower install'
 3. start a server in the root directory
 4. point your browser at runner.html
+5. there's no Karma, so you may want to use livereload to refresh the page
 
 ### To add a new element and test of your own:
 
