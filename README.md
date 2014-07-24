@@ -1,5 +1,5 @@
-polymer-shared-elements
-=======================
+my-shared-polymer-elements
+==========================
 
 The idea of this repo is to provide a simple template for a collection of Polymer elements that can be shared between multiple private projects.
 
